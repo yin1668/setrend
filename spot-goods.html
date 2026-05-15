@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="seo-title">特殊现货 | 稀缺型号LED电源 - 希勤达科技</title>
+    <meta id="seo-description" name="description" content="希勤达科技特殊紧缺型号现货供应，稀缺LED光源及工业电源型号，欢迎询价采购。">
+    <meta id="seo-keywords" name="keywords" content="特殊现货, 稀缺型号, LED现货, 电源现货">
+    <link rel="stylesheet" href="style-v2.css">
+    <link rel="canonical" href="https://www.setrendtech.com/spot-goods.html">
+    <style>
+        .spot-goods-section {
+            background: var(--white);
+            padding: 60px 0;
+        }
+        
+        .spot-goods-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .spot-goods-header h2 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+        
+        .spot-goods-header p {
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+        
+        .spot-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #48bb78, #38a169);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+        
+        .edit-controls {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .edit-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .edit-btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+        
+        .edit-btn-primary:hover {
+            background: var(--accent-hover);
+        }
+        
+        .edit-btn-secondary {
+            background: var(--bg);
+            color: var(--text);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .edit-btn-secondary:hover {
+            background: #e2e8f0;
+        }
+        
+        .edit-btn-danger {
+            background: #fed7d7;
+            color: #c53030;
+        }
+        
+        .edit-btn-danger:hover {
+            background: #feb2b2;
+        }
+        
+        .spot-table-container {
+            overflow-x: auto;
+            margin-bottom: 30px;
+        }
+        
+        .spot-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .spot-table thead {
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        .spot-table th {
+            padding: 16px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        
+        .spot-table td {
+            padding: 16px;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 0.9rem;
+        }
+        
+        .spot-table tbody tr:hover {
+            background: var(--bg);
+        }
+        
+        .spot-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .spot-table td.editing {
+            padding: 8px;
+        }
+        
+        .spot-table input {
+            width: 100%;
+            padding: 8px;
+            border: 2px solid var(--accent);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-family: inherit;
+        }
+        
+        .spot-table input:focus {
+            outline: none;
+            border-color: var(--accent-hover);
+        }
+        
+        .model-cell {
+            font-weight: 600;
+            color: var(--primary);
+            font-family: 'Courier New', monospace;
+        }
+        
+        .brand-cell {
+            font-weight: 500;
+        }
+        
+        .category-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .category-led {
+            background: rgba(49, 130, 206, 0.1);
+            color: var(--accent);
+        }
+        
+        .category-power {
+            background: rgba(236, 112, 99, 0.1);
+            color: #e74c3c;
+        }
+        
+        .stock-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        
+        .stock-available {
+            background: rgba(72, 187, 120, 0.1);
+            color: #38a169;
+        }
+        
+        .stock-limited {
+            background: rgba(237, 137, 54, 0.1);
+            color: #dd6b20;
+        }
+        
+        .action-btns {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .action-btn {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .action-btn-edit {
+            background: rgba(49, 130, 206, 0.1);
+            color: var(--accent);
+        }
+        
+        .action-btn-edit:hover {
+            background: var(--accent);
+            color: white;
+        }
+        
+        .action-btn-delete {
+            background: rgba(229, 62, 62, 0.1);
+            color: #e53e3e;
+        }
+        
+        .action-btn-delete:hover {
+            background: #e53e3e;
+            color: white;
+        }
+        
+        .action-btn-save {
+            background: rgba(72, 187, 120, 0.1);
+            color: #38a169;
+        }
+        
+        .action-btn-save:hover {
+            background: #38a169;
+            color: white;
+        }
+        
+        .action-btn-cancel {
+            background: rgba(160, 174, 192, 0.1);
+            color: var(--text-light);
+        }
+        
+        .action-btn-cancel:hover {
+            background: var(--text-light);
+            color: white;
+        }
+        
+        .empty-message {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-light);
+        }
+        
+        .last-updated {
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.85rem;
+            margin-top: 20px;
+        }
+        
+        .export-section {
+            background: var(--bg);
+            padding: 20px;
+            border-radius: var(--radius);
+            margin-top: 30px;
+        }
+        
+        .export-section h3 {
+            font-size: 1rem;
+            margin-bottom: 12px;
+            color: var(--primary);
+        }
+        
+        .export-section textarea {
+            width: 100%;
+            height: 120px;
+            padding: 12px;
+            border: 1px solid #e2e8f0;
+            border-radius: var(--radius-sm);
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            resize: vertical;
+        }
+        
+        .export-section p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-top: 8px;
+        }
+        
+        /* 移动端卡片视图 */
+        @media (max-width: 768px) {
+            .spot-table-container {
+                display: none;
+            }
+            
+            .spot-cards {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+            
+            .spot-card {
+                background: var(--white);
+                border-radius: var(--radius);
+                padding: 20px;
+                box-shadow: var(--shadow-sm);
+                border: 1px solid #e2e8f0;
+            }
+            
+            .spot-card-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 12px;
+            }
+            
+            .spot-card-model {
+                font-weight: 600;
+                color: var(--primary);
+                font-family: 'Courier New', monospace;
+                font-size: 1.1rem;
+            }
+            
+            .spot-card-body {
+                display: grid;
+                gap: 8px;
+            }
+            
+            .spot-card-row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            .spot-card-label {
+                color: var(--text-light);
+                font-size: 0.85rem;
+            }
+            
+            .spot-card-value {
+                font-weight: 500;
+                font-size: 0.9rem;
+            }
+            
+            .edit-controls {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+        @media (min-width: 769px) {
+            .spot-cards {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/setrend%20logo%20simple.png" alt="希勤达科技" class="logo-img">
+                <span class="logo-text">希勤达科技</span>
+            </a>
+            <button class="menu-toggle" onclick="document.querySelector('.nav-menu').classList.toggle('active')">☰</button>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="led.html">LED光源</a></li>
+                <li><a href="power.html">工业电源</a></li>
+                <li><a href="applications.html">应用领域</a></li>
+                <li><a href="spot-goods.html" class="active">特殊现货</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <header class="page-header has-bg-image" style="background-image: url('images/header-led.jpg');">
+        <div class="container">
+            <h1>📦 特殊现货</h1>
+            <p>稀缺型号现货库存，数量有限</p>
+        </div>
+    </header>
+
+    <!-- 现货列表 -->
+    <section class="spot-goods-section">
+        <div class="container">
+            <!-- 常规现货说明 -->
+            <div style="background: linear-gradient(135deg, #ebf8ff 0%, #e6fffa 100%); padding: 24px; border-radius: var(--radius); margin-bottom: 40px; border-left: 4px solid var(--accent);">
+                <h3 style="color: var(--primary); margin-bottom: 12px; font-size: 1.1rem;">📞 常规现货咨询</h3>
+                <p style="color: var(--text); margin-bottom: 8px; line-height: 1.6;">常规型号现货请直接联系销售团队，我们拥有多品牌常规型号库存，可快速响应您的需求。</p>
+                <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 16px;">
+                    <a href="tel:+8613682629958" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">📱 致电：13682629958</a>
+                    <a href="mailto:sales@setrendtech.com" class="btn btn-outline" style="padding: 10px 20px; font-size: 0.9rem;">✉️ 邮件咨询</a>
+                </div>
+            </div>
+            
+            <!-- 特殊现货列表 -->
+            <div class="spot-goods-header">
+                <h2>特殊紧缺型号<span class="spot-badge">稀缺现货</span></h2>
+                <p>以下为我司特殊紧缺型号现货库存，数量有限，欢迎优先询价锁定</p>
+            </div>
+            
+            <div id="spot-goods-content">
+                <div class="loading-message" style="text-align: center; padding: 60px 20px; color: var(--text-light);">
+                    <p>⏳ 正在加载现货数据...</p>
+                </div>
+            </div>
+            
+            <div class="last-updated" id="last-updated"></div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="tel:+8613682629958" class="btn btn-primary">📞 联系销售询价</a>
+            </div>
+            
+            <!-- 管理功能区域 - 位于页面底部，折叠隐藏 -->
+            <div style="margin-top: 80px; padding-top: 40px; border-top: 1px solid #edf2f7;">
+                <details style="font-size: 0.75rem; color: #a0aec0;">
+                    <summary style="cursor: pointer; padding: 10px 0; list-style: none; opacity: 0.6;">·</summary>
+                    <div style="padding: 20px; background: var(--bg); border-radius: var(--radius); margin-top: 10px;">
+                        <p style="margin-bottom: 16px; font-size: 0.9rem;">此区域仅供管理员更新现货数据使用。</p>
+                        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                            <button class="edit-btn edit-btn-primary" onclick="toggleEditMode()" id="editModeBtn">✏️ 进入编辑模式</button>
+                            <button class="edit-btn edit-btn-secondary" onclick="addNewRow()" id="addRowBtn" style="display: none;">➕ 添加型号</button>
+                            <button class="edit-btn edit-btn-secondary" onclick="exportData()">📋 导出数据</button>
+                            <button class="edit-btn edit-btn-danger" onclick="clearAllData()">🗑️ 清空所有</button>
+                        </div>
+                        <div class="export-section" id="exportSection" style="display: none; margin-top: 20px;">
+                            <h3 style="font-size: 0.9rem;">数据导出（复制保存）</h3>
+                            <textarea id="exportData" readonly style="height: 80px;"></textarea>
+                            <p style="font-size: 0.8rem;">提示：复制以上数据保存到文本文件，需要恢复时粘贴到导入框</p>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <h2>需要其他型号？</h2>
+            <p>我们支持多品牌订货，即使没有现货，也能快速帮您调货</p>
+            <a href="tel:+8613682629958" class="btn btn-primary">咨询其他型号</a>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-brand">
+                        <img src="images/setrend%20logo%20simple.png" alt="希勤达科技" class="footer-logo">
+                        <span class="footer-brand-name">希勤达科技</span>
+                    </div>
+                    <p>一线品牌LED光源·工业电源产品方案提供商</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="power.html">工业电源</a></li>
+                        <li><a href="applications.html">应用领域</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>联系我们</h4>
+                    <p><strong>运营：</strong>深圳 | 惠州 | 香港 | 越南·北宁</p>
+                    <p><strong>手机：</strong>+86 13682629958</p>
+                    <p><strong>邮箱：</strong>sales@setrendtech.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 深圳市希勤达科技有限公司 | www.setrendtech.com</p>
+                <div class="footer-legal">
+                    <p>本网站展示的所有品牌名称、商标及标识均为其各自所有者的财产，仅用于说明我司经销的产品来源。</p>
+                    <p>我们尊重并保护所有品牌的知识产权。如涉及版权或商标侵权问题，请立即，我们将第一时间处理。</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Data storage key
+        const STORAGE_KEY = 'spotGoodsData';
+        const EDIT_PASSWORD = 'Setrend2026'; // 编辑密码
+        let isEditMode = false;
+        let isAuthenticated = false;
+        let editingRow = -1;
+        
+        // Default sample data
+        const defaultData = [
+            { model: 'LXZ1-PR01', brand: 'Lumileds', category: 'LED', features: 'Luxoen Z, 450nm/Royal Blue', stock: '现货', sort: '1' },
+            { model: 'L1T2-3090300000000', brand: 'Lumileds', category: 'LED', features: 'Luxoen TX, 3000K/90Ra/3 Step', stock: '现货', sort: '2' },
+            { model: 'LMZ7-SW50', brand: 'Lumileds', category: 'LED', features: 'Luxoen MZ, 5000K/70Ra/12V', stock: '现货', sort: '3' },
+            { model: 'L1I0-A940090000000', brand: 'Lumileds', category: 'LED', features: 'Luxoen IR, 940nm/车规IR', stock: '现货', sort: '4' },
+            { model: 'R4850G6', brand: 'Huawei', category: '电源', features: '通信级/3000W/效率95%', stock: '现货', sort: '5' }
+        ];
+        
+        function loadData() {
+            const stored = localStorage.getItem(STORAGE_KEY);
+            if (stored) {
+                return JSON.parse(stored);
+            }
+            return defaultData;
+        }
+        
+        function saveData(data) {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+            document.getElementById('last-updated').textContent = '更新时间：' + new Date().toLocaleString('zh-CN');
+        }
+        
+        function renderTable() {
+            const contentDiv = document.getElementById('spot-goods-content');
+            const data = loadData();
+            
+            if (data.length === 0) {
+                contentDiv.innerHTML = '<div class="empty-message"><p>暂无现货数据，点击"添加型号"开始录入。</p></div>';
+                return;
+            }
+            
+            // Sort by sort order
+            data.sort((a, b) => parseInt(a.sort || 999) - parseInt(b.sort || 999));
+            
+            let tableHTML = '<div class="spot-table-container"><table class="spot-table"><thead><tr>';
+            tableHTML += '<th>型号</th>';
+            tableHTML += '<th>品牌</th>';
+            tableHTML += '<th>类别</th>';
+            tableHTML += '<th>主要特色</th>';
+            tableHTML += '<th>库存状态</th>';
+            if (isEditMode) {
+                tableHTML += '<th>操作</th>';
+            }
+            tableHTML += '</tr></thead><tbody>';
+            
+            for (let i = 0; i < data.length; i++) {
+                const item = data[i];
+                
+                if (editingRow === i) {
+                    tableHTML += renderEditRow(i, item);
+                } else {
+                    tableHTML += renderDisplayRow(i, item);
+                }
+            }
+            
+            tableHTML += '</tbody></table></div>';
+            contentDiv.innerHTML = tableHTML;
+            
+            // Render mobile cards
+            renderCards(data);
+        }
+        
+        function renderDisplayRow(index, item) {
+            const categoryClass = item.category.includes('LED') ? 'category-led' : 'category-power';
+            const stockClass = item.stock.includes('限量') || item.stock.includes('紧张') ? 'stock-limited' : 'stock-available';
+            const stockIcon = stockClass === 'stock-available' ? '✅' : '⚠️';
+            
+            let html = '<tr>';
+            html += `<td class="model-cell">${escapeHtml(item.model)}</td>`;
+            html += `<td class="brand-cell">${escapeHtml(item.brand)}</td>`;
+            html += `<td><span class="category-badge ${categoryClass}">${escapeHtml(item.category)}</span></td>`;
+            html += `<td>${escapeHtml(item.features)}</td>`;
+            html += `<td><span class="stock-badge ${stockClass}">${stockIcon} ${escapeHtml(item.stock)}</span></td>`;
+            
+            if (isEditMode) {
+                html += '<td class="action-btns">';
+                html += `<button class="action-btn action-btn-edit" onclick="editRow(${index})">编辑</button>`;
+                html += `<button class="action-btn action-btn-delete" onclick="deleteRow(${index})">删除</button>`;
+                html += '</td>';
+            }
+            
+            html += '</tr>';
+            return html;
+        }
+        
+        function renderEditRow(index, item) {
+            let html = '<tr>';
+            html += `<td class="editing"><input type="text" id="edit-model-${index}" value="${escapeHtml(item.model)}" placeholder="型号"></td>`;
+            html += `<td class="editing"><input type="text" id="edit-brand-${index}" value="${escapeHtml(item.brand)}" placeholder="品牌"></td>`;
+            html += `<td class="editing"><input type="text" id="edit-category-${index}" value="${escapeHtml(item.category)}" placeholder="LED/电源"></td>`;
+            html += `<td class="editing"><input type="text" id="edit-features-${index}" value="${escapeHtml(item.features)}" placeholder="特色"></td>`;
+            html += `<td class="editing"><input type="text" id="edit-stock-${index}" value="${escapeHtml(item.stock)}" placeholder="现货/限量"></td>`;
+            html += '<td class="action-btns">';
+            html += `<button class="action-btn action-btn-save" onclick="saveRow(${index})">保存</button>`;
+            html += `<button class="action-btn action-btn-cancel" onclick="cancelEdit()">取消</button>`;
+            html += '</td>';
+            html += '</tr>';
+            return html;
+        }
+        
+        function renderCards(data) {
+            const contentDiv = document.getElementById('spot-goods-content');
+            
+            let cardsHTML = '<div class="spot-cards">';
+            
+            for (let i = 0; i < data.length; i++) {
+                const item = data[i];
+                const categoryClass = item.category.includes('LED') ? 'category-led' : 'category-power';
+                const stockClass = item.stock.includes('限量') || item.stock.includes('紧张') ? 'stock-limited' : 'stock-available';
+                const stockIcon = stockClass === 'stock-available' ? '✅' : '⚠️';
+                
+                cardsHTML += '<div class="spot-card">';
+                cardsHTML += '<div class="spot-card-header">';
+                cardsHTML += `<span class="spot-card-model">${escapeHtml(item.model)}</span>`;
+                cardsHTML += `<span class="stock-badge ${stockClass}">${stockIcon} ${escapeHtml(item.stock)}</span>`;
+                cardsHTML += '</div>';
+                cardsHTML += '<div class="spot-card-body">';
+                cardsHTML += '<div class="spot-card-row"><span class="spot-card-label">品牌</span><span class="spot-card-value">' + escapeHtml(item.brand) + '</span></div>';
+                cardsHTML += '<div class="spot-card-row"><span class="spot-card-label">类别</span><span class="spot-card-value"><span class="category-badge ' + categoryClass + '">' + escapeHtml(item.category) + '</span></span></div>';
+                cardsHTML += '<div class="spot-card-row"><span class="spot-card-label">特色</span><span class="spot-card-value">' + escapeHtml(item.features) + '</span></div>';
+                cardsHTML += '</div>';
+                cardsHTML += '</div>';
+            }
+            
+            cardsHTML += '</div>';
+            contentDiv.innerHTML += cardsHTML;
+        }
+        
+        function toggleEditMode() {
+            if (!isEditMode && !isAuthenticated) {
+                // 进入编辑模式前验证密码
+                const input = prompt('请输入编辑密码：');
+                if (input === null) {
+                    return; // 用户取消
+                }
+                if (input !== EDIT_PASSWORD) {
+                    alert('密码错误，无法进入编辑模式。');
+                    return;
+                }
+                isAuthenticated = true;
+            }
+            
+            isEditMode = !isEditMode;
+            editingRow = -1;
+            
+            const btn = document.getElementById('editModeBtn');
+            const addBtn = document.getElementById('addRowBtn');
+            
+            if (isEditMode) {
+                btn.textContent = '👁️ 退出编辑模式';
+                btn.classList.remove('edit-btn-primary');
+                btn.classList.add('edit-btn-secondary');
+                addBtn.style.display = 'inline-block';
+            } else {
+                btn.textContent = '✏️ 进入编辑模式';
+                btn.classList.remove('edit-btn-secondary');
+                btn.classList.add('edit-btn-primary');
+                addBtn.style.display = 'none';
+            }
+            
+            renderTable();
+        }
+        
+        function addNewRow() {
+            const data = loadData();
+            data.push({ model: '', brand: '', category: 'LED', features: '', stock: '现货', sort: String(data.length + 1) });
+            saveData(data);
+            editingRow = data.length - 1;
+            renderTable();
+            updateSEO();
+        }
+        
+        function editRow(index) {
+            editingRow = index;
+            renderTable();
+        }
+        
+        function saveRow(index) {
+            const data = loadData();
+            data[index] = {
+                model: document.getElementById(`edit-model-${index}`).value,
+                brand: document.getElementById(`edit-brand-${index}`).value,
+                category: document.getElementById(`edit-category-${index}`).value,
+                features: document.getElementById(`edit-features-${index}`).value,
+                stock: document.getElementById(`edit-stock-${index}`).value,
+                sort: String(index + 1)
+            };
+            saveData(data);
+            editingRow = -1;
+            renderTable();
+            updateSEO();
+        }
+        
+        function cancelEdit() {
+            editingRow = -1;
+            renderTable();
+        }
+        
+        function deleteRow(index) {
+            if (confirm('确定要删除这个型号吗？')) {
+                const data = loadData();
+                data.splice(index, 1);
+                saveData(data);
+                renderTable();
+                updateSEO();
+            }
+        }
+        
+        function clearAllData() {
+            if (confirm('确定要清空所有现货数据吗？此操作不可恢复！')) {
+                localStorage.removeItem(STORAGE_KEY);
+                renderTable();
+                updateSEO();
+            }
+        }
+        
+        function exportData() {
+            const data = loadData();
+            const exportText = JSON.stringify(data, null, 2);
+            document.getElementById('exportData').value = exportText;
+            document.getElementById('exportSection').style.display = 'block';
+        }
+        
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        // 同步更新SEO标签
+        function updateSEO() {
+            const data = loadData();
+            if (data.length === 0) return;
+            
+            // 获取前5个型号用于SEO
+            const topModels = data.slice(0, 5);
+            const modelNames = topModels.map(item => item.model).join(' ');
+            const brandNames = [...new Set(topModels.map(item => item.brand))].join('、');
+            const categoryNames = [...new Set(topModels.map(item => item.category))].join('、');
+            
+            // 更新Title
+            const titleEl = document.getElementById('seo-title');
+            if (titleEl && modelNames) {
+                titleEl.textContent = `特殊现货 | ${modelNames} 稀缺型号${categoryNames} - 希勤达科技`;
+            }
+            
+            // 更新Description
+            const descEl = document.getElementById('seo-description');
+            if (descEl && topModels.length > 0) {
+                const modelDesc = topModels.map(item => `${item.brand}${item.model}${item.features}`).join('、');
+                descEl.setAttribute('content', `希勤达科技特殊紧缺型号现货：${modelDesc}等稀缺型号，欢迎询价采购。`);
+            }
+            
+            // 更新Keywords
+            const keywordsEl = document.getElementById('seo-keywords');
+            if (keywordsEl) {
+                const modelKeywords = topModels.map(item => item.model).join(', ');
+                const brandKeywords = [...new Set(topModels.map(item => item.brand + '现货'))].join(', ');
+                keywordsEl.setAttribute('content', `${modelKeywords}, ${brandKeywords}, 特殊现货, 稀缺型号, ${categoryNames}现货`);
+            }
+        }
+        
+        // Load data when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            renderTable();
+            updateSEO();
+            document.getElementById('last-updated').textContent = '更新时间：' + new Date().toLocaleString('zh-CN');
+        });
+    </script>
+</body>
+</html>
