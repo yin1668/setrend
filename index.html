@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>希勤达科技 | 一线品牌LED光源·工业电源产品方案提供商</title>
     <meta name="description" content="深圳市希勤达科技有限公司，专业主营Lumileds、Cree、科索、华为等一线品牌LED光源及工业电源产品，提供定制化解决方案。">
@@ -54,7 +55,7 @@
                 <li><a href="applications.html">应用领域</a></li>
                 <li><a href="spot-goods.html">特殊现货</a></li>
                 <li><a href="about.html">关于我们</a></li>
-                <li><a href="contact.html">联系我们</a></li>
+                
             </ul>
         </div>
     </nav>
@@ -100,7 +101,7 @@
                     <div class="business-icon">🔧</div>
                     <h3>定制开发</h3>
                     <p>提供LED、IR、UV及电源产品的定制开发及二次开发服务，满足客户特殊需求</p>
-                    <a href="contact.html" class="link-arrow">咨询定制 →</a>
+                    <a href="mailto:sales@setrendtech.com" class="link-arrow">咨询定制 →</a>
                 </div>
             </div>
         </div>
@@ -186,24 +187,6 @@
         </div>
     </section>
 
-    <!-- 特殊现货 -->
-    <section class="spot-goods-home">
-        <div class="container">
-            <div class="section-header">
-                <h2>📦 热门现货</h2>
-                <p>以下型号现货库存，欢迎询价采购</p>
-            </div>
-            <div class="spot-goods-preview" id="spot-goods-preview">
-                <div class="loading-message" style="text-align: center; padding: 40px; color: var(--text-light);">
-                    <p>⏳ 正在加载现货数据...</p>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 30px;">
-                <a href="spot-goods.html" class="btn btn-primary">查看全部现货 →</a>
-            </div>
-        </div>
-    </section>
-
     <!-- 公司简介 -->
     <section class="company-intro">
         <div class="container">
@@ -221,81 +204,14 @@
         </div>
     </section>
 
-    <script>
-        // Load spot goods data from localStorage
-        const STORAGE_KEY_PREVIEW = 'spotGoodsData';
-        
-        function loadSpotGoodsPreview() {
-            const previewDiv = document.getElementById('spot-goods-preview');
-            
-            try {
-                const stored = localStorage.getItem(STORAGE_KEY_PREVIEW);
-                let data = [];
-                
-                if (stored) {
-                    data = JSON.parse(stored);
-                } else {
-                    // Default sample data
-                    data = [
-                        { model: 'L1T2-3090', brand: 'Lumileds', category: 'LED', features: '汽车大灯，高亮度', stock: '现货', sort: '1' },
-                        { model: 'LXZ1-PR01', brand: 'Lumileds', category: 'LED', features: '手机闪光灯', stock: '现货', sort: '2' },
-                        { model: 'GDQ33512B', brand: 'Huawei', category: '电源', features: '通信电源模块，33A', stock: '现货', sort: '3' }
-                    ];
-                }
-                
-                if (data.length === 0) {
-                    previewDiv.innerHTML = '<div style="text-align: center; padding: 40px; color: var(--text-light);"><p>暂无现货数据，请查看特殊现货页面或联系销售。</p></div>';
-                    return;
-                }
-                
-                // Sort by sort order, take top 5
-                data.sort((a, b) => parseInt(a.sort || 999) - parseInt(b.sort || 999));
-                const previewData = data.slice(0, 5);
-                
-                renderPreview(previewData);
-                
-            } catch (error) {
-                console.error('Error loading preview:', error);
-                previewDiv.innerHTML = '<div style="text-align: center; padding: 40px; color: var(--text-light);"><p>数据加载中，请前往特殊现货页面查看。</p></div>';
-            }
-        }
-        
-        function renderPreview(data) {
-            const previewDiv = document.getElementById('spot-goods-preview');
-            
-            let html = '<div class="spot-preview-list">';
-            
-            for (const item of data) {
-                html += '<div class="spot-preview-item">';
-                html += '<span class="spot-preview-model">' + escapeHtmlPreview(item.model) + '</span>';
-                html += '<div class="spot-preview-info">';
-                html += '<span class="spot-preview-brand">' + escapeHtmlPreview(item.brand) + '</span>';
-                html += '<span class="spot-preview-features">' + escapeHtmlPreview(item.features) + '</span>';
-                html += '</div>';
-                html += '<span class="spot-preview-stock">✅ ' + escapeHtmlPreview(item.stock) + '</span>';
-                html += '</div>';
-            }
-            
-            html += '</div>';
-            previewDiv.innerHTML = html;
-        }
-        
-        function escapeHtmlPreview(text) {
-            const div = document.createElement('div');
-            div.textContent = text;
-            return div.innerHTML;
-        }
-        
-        // Load preview when page loads
-        document.addEventListener('DOMContentLoaded', loadSpotGoodsPreview);
-    </script>
+
 
     <!-- 联系我们CTA -->
     <section class="cta">
         <div class="container">
             <h2>获取产品选型及方案协助</h2>
             <p>欢迎邮件或致电咨询，我们将提供专业技术支持</p>
-            <a href="contact.html" class="btn btn-primary">联系我们</a>
+            <a href="mailto:sales@setrendtech.com" class="btn btn-primary">联系我们</a>
         </div>
     </section>
 
@@ -331,7 +247,7 @@
                 <p>&copy; 2026 深圳市希勤达科技有限公司 | www.setrendtech.com</p>
                 <div class="footer-legal">
                     <p>本网站展示的所有品牌名称、商标及标识均为其各自所有者的财产，仅用于说明我司经销的产品来源。</p>
-                    <p>我们尊重并保护所有品牌的知识产权。如涉及版权或商标侵权问题，请立即<a href="contact.html">联系我们</a>，我们将第一时间处理。</p>
+                    <p>我们尊重并保护所有品牌的知识产权。如涉及版权或商标侵权问题，请立即，我们将第一时间处理。</p>
                 </div>
             </div>
         </div>
