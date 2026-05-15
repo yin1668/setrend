@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="seo-title">特殊现货 | 稀缺型号LED电源 - 希勤达科技</title>
-    <meta id="seo-description" name="description" content="希勤达科技特殊紧缺型号现货供应，稀缺LED光源及工业电源型号，欢迎询价采购。">
-    <meta id="seo-keywords" name="keywords" content="特殊现货, 稀缺型号, LED现货, 电源现货">
+    <title id="seo-title">现货供应 | 稀缺型号LED电源 - 希勤达科技</title>
+    <meta id="seo-description" name="description" content="希勤达科技特殊现货现货供应，稀缺LED光源及工业电源型号，欢迎询价采购。">
+    <meta id="seo-keywords" name="keywords" content="现货供应, 稀缺型号, LED现货, 电源现货">
     <link rel="stylesheet" href="style-v2.css">
     <link rel="canonical" href="https://www.setrendtech.com/spot-goods.html">
     <style>
@@ -374,7 +374,7 @@
                 <li><a href="led.html">LED光源</a></li>
                 <li><a href="power.html">工业电源</a></li>
                 <li><a href="applications.html">应用领域</a></li>
-                <li><a href="spot-goods.html" class="active">特殊现货</a></li>
+                <li><a href="spot-goods.html" class="active">现货供应</a></li>
                 <li><a href="about.html">关于我们</a></li>
                 
             </ul>
@@ -384,8 +384,8 @@
     <!-- 页面标题 -->
     <header class="page-header has-bg-image" style="background-image: url('images/header-led.jpg');">
         <div class="container">
-            <h1>📦 特殊现货</h1>
-            <p>稀缺型号现货库存，数量有限</p>
+            <h1>📦 现货供应</h1>
+            <p>常规料现货充足，稀缺料限时供应。</p>
         </div>
     </header>
 
@@ -402,10 +402,10 @@
                 </div>
             </div>
             
-            <!-- 特殊现货列表 -->
+            <!-- 现货供应列表 -->
             <div class="spot-goods-header">
-                <h2>特殊紧缺型号<span class="spot-badge">稀缺现货</span></h2>
-                <p>以下为我司特殊紧缺型号现货库存，数量有限，欢迎优先询价锁定</p>
+                <h2>稀缺料号<span class="spot-badge">限时供应</span></h2>
+                <p>以下为我司稀缺料号库存，数量有限，欢迎优先询价锁定</p>
             </div>
             
             <div id="spot-goods-content">
@@ -483,7 +483,7 @@
                 <p>&copy; 2026 深圳市希勤达科技有限公司 | www.setrendtech.com</p>
                 <div class="footer-legal">
                     <p>本网站展示的所有品牌名称、商标及标识均为其各自所有者的财产，仅用于说明我司经销的产品来源。</p>
-                    <p>我们尊重并保护所有品牌的知识产权。如涉及版权或商标侵权问题，请立即，我们将第一时间处理。</p>
+                    <p>我们尊重并保护所有品牌的知识产权。如涉及版权或商标侵权问题，请立即<a href="mailto:sales@setrendtech.com">联系我们</a>，我们将第一时间处理。</p>
                 </div>
             </div>
         </div>
@@ -740,14 +740,14 @@
             // 更新Title
             const titleEl = document.getElementById('seo-title');
             if (titleEl && modelNames) {
-                titleEl.textContent = `特殊现货 | ${modelNames} 稀缺型号${categoryNames} - 希勤达科技`;
+                titleEl.textContent = `现货供应 | ${modelNames} 稀缺型号${categoryNames} - 希勤达科技`;
             }
             
             // 更新Description
             const descEl = document.getElementById('seo-description');
             if (descEl && topModels.length > 0) {
                 const modelDesc = topModels.map(item => `${item.brand}${item.model}${item.features}`).join('、');
-                descEl.setAttribute('content', `希勤达科技特殊紧缺型号现货：${modelDesc}等稀缺型号，欢迎询价采购。`);
+                descEl.setAttribute('content', `希勤达科技特殊现货现货：${modelDesc}等稀缺型号，欢迎询价采购。`);
             }
             
             // 更新Keywords
@@ -755,7 +755,7 @@
             if (keywordsEl) {
                 const modelKeywords = topModels.map(item => item.model).join(', ');
                 const brandKeywords = [...new Set(topModels.map(item => item.brand + '现货'))].join(', ');
-                keywordsEl.setAttribute('content', `${modelKeywords}, ${brandKeywords}, 特殊现货, 稀缺型号, ${categoryNames}现货`);
+                keywordsEl.setAttribute('content', `${modelKeywords}, ${brandKeywords}, 现货供应, 稀缺型号, ${categoryNames}现货`);
             }
         }
         
